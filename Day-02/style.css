@@ -1,0 +1,88 @@
+/* Простой сброс отступов для всех элементов */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Общий шрифт и фон страницы */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Шапка */
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #2c3e50;
+    color: white;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    opacity: 0.85;
+}
+
+/* Основной контейнер — ограничим ширину и выровняем по центру */
+main {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Секции с белым фоном и тенью */
+section {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+section h2 {
+    margin-bottom: 15px;
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Список навыков */
+ul {
+    list-style-position: inside;
+    padding-left: 10px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Ссылки */
+a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Подвал */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 15px;
+    color: #777;
+    font-size: 0.9em;
+}
