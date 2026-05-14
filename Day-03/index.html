@@ -8,6 +8,7 @@
 <body>
     <!-- Шапка с именем и кратким описанием -->
     <header>
+        <button id="themeToggle" title="Переключить тему">🌓</button>
         <nav>
     <button class="nav-btn" data-target="about">Обо мне</button>
     <button class="nav-btn" data-target="skills">Навыки</button>
@@ -43,6 +44,28 @@
             <h2>Контакты</h2>
             <p>Напишите мне в <a href="https://t.me/Dunya321" target="_blank">Telegram</a></p>
         </section>
+        <section id="contactFormSection">
+    <h2>Напишите мне</h2>
+    <form id="contactForm">
+        <div>
+            <label for="nameInput">Имя</label>
+            <input type="text" id="nameInput" placeholder="Ваше имя" required>
+            <span class="error" id="nameError"></span>
+        </div>
+        <div>
+            <label for="emailInput">Email</label>
+            <input type="email" id="emailInput" placeholder="your@email.com" required>
+            <span class="error" id="emailError"></span>
+        </div>
+        <div>
+            <label for="messageInput">Сообщение</label>
+            <textarea id="messageInput" rows="4" placeholder="Ваше сообщение..." required></textarea>
+            <span class="error" id="messageError"></span>
+        </div>
+        <button type="submit" id="submitBtn">Отправить</button>
+        <div id="formFeedback" style="margin-top: 15px; font-weight: bold;"></div>
+    </form>
+</section>
     </main>
 
     <!-- Подвал -->
